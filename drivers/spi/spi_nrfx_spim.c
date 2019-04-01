@@ -317,7 +317,7 @@ static int init_spim(struct device *dev, const nrfx_spim_config_t *config)
 			.sck_pin   = DT_NORDIC_NRF_SPI_SPI_##idx##_SCK_PIN,    \
 			.mosi_pin  = DT_NORDIC_NRF_SPI_SPI_##idx##_MOSI_PIN,   \
 			.miso_pin  = DT_NORDIC_NRF_SPI_SPI_##idx##_MISO_PIN,   \
-			.ss_pin    = 17,		       \
+			.ss_pin    = DT_NORDIC_NRF_SPI_SPI_##idx##_SS_PIN,     \
 			.orc       = CONFIG_SPI_##idx##_NRF_ORC,	       \
 			.frequency = NRF_SPIM_FREQ_2M,			       \
 			.mode      = NRF_SPIM_MODE_0,			       \
