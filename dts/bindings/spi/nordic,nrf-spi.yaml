@@ -46,4 +46,10 @@ properties:
       category: required
       description: MISO pin
       generation: define
+
+    ss-pin:
+      type: int
+      category: required
+      description: SS pin
+      generation: define
 ...
