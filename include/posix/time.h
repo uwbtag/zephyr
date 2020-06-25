@@ -63,10 +63,10 @@ static inline s32_t _ts_to_ms(const struct timespec *to)
 	return (to->tv_sec * MSEC_PER_SEC) + (to->tv_nsec / NSEC_PER_MSEC);
 }
 
-int clock_gettime(clockid_t clock_id, struct timespec *ts);
-int clock_settime(clockid_t clock_id, const struct timespec *ts);
+int clock_gettime(u32_clockid_t clock_id, struct timespec *ts);
+int clock_settime(u32_clockid_t clock_id, const struct timespec *ts);
 /* Timer APIs */
-int timer_create(clockid_t clockId, struct sigevent *evp, timer_t *timerid);
+int timer_create(u32_clockid_t clockId, struct sigevent *evp, timer_t *timerid);
 int timer_delete(timer_t timerid);
 int timer_gettime(timer_t timerid, struct itimerspec *its);
 int timer_settime(timer_t timerid, int flags, const struct itimerspec *value,

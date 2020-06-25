@@ -411,9 +411,9 @@ static inline int pthread_barrierattr_destroy(pthread_barrierattr_t *b)
  * Unix code.  Leave the declarations here so they can be easily
  * uncommented and implemented as needed.
 
-int pthread_condattr_getclock(const pthread_condattr_t * clockid_t *);
+int pthread_condattr_getclock(const pthread_condattr_t * u32_clockid_t *);
 int pthread_condattr_getpshared(const pthread_condattr_t * int *);
-int pthread_condattr_setclock(pthread_condattr_t *, clockid_t);
+int pthread_condattr_setclock(pthread_condattr_t *, u32_clockid_t);
 int pthread_condattr_setpshared(pthread_condattr_t *, int);
 int pthread_mutex_consistent(pthread_mutex_t *);
 int pthread_mutex_getprioceiling(const pthread_mutex_t * int *);

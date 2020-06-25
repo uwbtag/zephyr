@@ -62,7 +62,7 @@ extern "C" {
 #define ZEPHYR_INCLUDE_POSIX_UNISTD_H_
 #define ZEPHYR_INCLUDE_POSIX_SYS_STAT_H_
 #include <time.h>
-extern int clock_gettime(clockid_t clock_id, struct timespec *ts);
+extern int clock_gettime(u32_clockid_t clock_id, struct timespec *ts);
 extern int usleep(useconds_t useconds);
 
 #include <posix/pthread.h>

@@ -21,7 +21,7 @@ static struct timespec rt_clock_base;
  *
  * See IEEE 1003.1
  */
-int clock_gettime(clockid_t clock_id, struct timespec *ts)
+int clock_gettime(u32_clockid_t clock_id, struct timespec *ts)
 {
 	u64_t elapsed_msecs;
 	struct timespec base;
@@ -64,7 +64,7 @@ int clock_gettime(clockid_t clock_id, struct timespec *ts)
  * Note that only the `CLOCK_REALTIME` clock can be set using this
  * call.
  */
-int clock_settime(clockid_t clock_id, const struct timespec *tp)
+int clock_settime(u32_clockid_t clock_id, const struct timespec *tp)
 {
 	struct timespec base;
 	int res;

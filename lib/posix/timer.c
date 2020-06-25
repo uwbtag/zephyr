@@ -47,7 +47,7 @@ static void zephyr_timer_wrapper(struct k_timer *ztimer)
  *
  * See IEEE 1003.1
  */
-int timer_create(clockid_t clockid, struct sigevent *evp, timer_t *timerid)
+int timer_create(u32_clockid_t clockid, struct sigevent *evp, timer_t *timerid)
 {
 	struct timer_obj *timer;
 
